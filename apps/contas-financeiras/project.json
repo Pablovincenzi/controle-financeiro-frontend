@@ -52,12 +52,17 @@
       "defaultConfiguration": "production"
     },
     "serve": {
+      "options": {
+        "port": 4202,
+        "publicHost": "http://localhost:4202"
+      },
       "continuous": true,
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
           "buildTarget": "contas-financeiras:build:production"
         },
+
         "development": {
           "buildTarget": "contas-financeiras:build:development"
         }
