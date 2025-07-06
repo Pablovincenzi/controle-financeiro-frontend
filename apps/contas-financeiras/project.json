@@ -1,28 +1,28 @@
 {
-  "name": "shell",
+  "name": "contas-financeiras",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/shell/src",
+  "sourceRoot": "apps/contas-financeiras/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/shell",
-        "index": "apps/shell/src/index.html",
-        "main": "apps/shell/src/main.ts",
+        "outputPath": "dist/apps/contas-financeiras",
+        "index": "apps/contas-financeiras/src/index.html",
+        "main": "apps/contas-financeiras/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/shell/tsconfig.app.json",
+        "tsConfig": "apps/contas-financeiras/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
           {
             "glob": "**/*",
-            "input": "apps/shell/public"
+            "input": "apps/contas-financeiras/public"
           }
         ],
-        "styles": ["apps/shell/src/styles.scss"]
+        "styles": ["apps/contas-financeiras/src/styles.scss"]
       },
       "configurations": {
         "production": {
@@ -51,21 +51,15 @@
       },
       "defaultConfiguration": "production"
     },
-    "serve-mfe": {
-      "executor": "nx:run-commands",
-      "options": {
-        "commands": ["nx serve contas-financeiras", "nx serve shell"]
-      }
-    },
     "serve": {
       "continuous": true,
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "shell:build:production"
+          "buildTarget": "contas-financeiras:build:production"
         },
         "development": {
-          "buildTarget": "shell:build:development"
+          "buildTarget": "contas-financeiras:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -73,7 +67,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "shell:build"
+        "buildTarget": "contas-financeiras:build"
       }
     },
     "lint": {
@@ -83,8 +77,8 @@
       "continuous": true,
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "shell:build",
-        "port": 4200,
+        "buildTarget": "contas-financeiras:build",
+        "port": 4202,
         "spa": true
       }
     }

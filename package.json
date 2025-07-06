@@ -2,9 +2,12 @@
   "name": "@controle-financeiro-frontend/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "serve:all": "nx run shell:serve-mfe"
+  },
   "private": true,
   "dependencies": {
+    "@angular-architects/native-federation": "^20.0.6",
     "@angular/common": "~20.0.0",
     "@angular/compiler": "~20.0.0",
     "@angular/core": "~20.0.0",
@@ -15,6 +18,7 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
+    "@angular-architects/module-federation": "^20.0.0",
     "@angular-devkit/build-angular": "~20.0.0",
     "@angular-devkit/core": "~20.0.0",
     "@angular-devkit/schematics": "~20.0.0",
@@ -22,7 +26,7 @@
     "@angular/compiler-cli": "~20.0.0",
     "@angular/language-service": "~20.0.0",
     "@eslint/js": "^9.8.0",
-    "@nx/angular": "21.2.1",
+    "@nx/angular": "^21.2.1",
     "@nx/cypress": "21.2.1",
     "@nx/eslint": "21.2.1",
     "@nx/eslint-plugin": "21.2.1",
@@ -40,10 +44,12 @@
     "eslint": "^9.8.0",
     "eslint-config-prettier": "^10.0.0",
     "eslint-plugin-cypress": "^3.5.0",
-    "nx": "21.2.1",
+    "nx": "^21.2.1",
     "prettier": "^2.6.2",
     "tslib": "^2.3.0",
     "typescript": "~5.8.2",
-    "typescript-eslint": "^8.29.0"
+    "typescript-eslint": "^8.29.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
   }
 }

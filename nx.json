@@ -54,5 +54,10 @@
       "style": "scss",
       "unitTestRunner": "none"
     }
+  },
+  "schematics": {
+    "@angular-architects/module-federation:config": {
+      "schema": "node_modules/@angular-architects/module-federation/src/schematics/mf/schema.json"
+    }
   }
 }
