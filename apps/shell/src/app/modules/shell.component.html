@@ -1,3 +1,12 @@
-<nz-input-group>
-  <span>teste</span>
-</nz-input-group>
+<ng-content>
+  <ul nz-menu nzMode="inline" class="menu-lateral" [nzTheme]="'dark'">
+    <li nz-submenu nzOpen nzTitle="Financeiro">
+      <ul>
+        <li nz-menu-group nzTitle="Contas financeiras">
+          <ul>
+            <li nz-menu-item nzSelected ()>Cadastro</li>
+          </ul>
+        </li>
+      </ul>
+  </ul>
+</ng-content>
