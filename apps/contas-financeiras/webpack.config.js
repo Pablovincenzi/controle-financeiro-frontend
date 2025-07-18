@@ -5,7 +5,7 @@ const {
 
 module.exports = withModuleFederationPlugin({
   name: 'login',
-  exposes: { './Module': 'apps/login/src/app/module/app.ts' },
+  exposes: { './Module': 'apps/contas-financeiras/src/app/module/app.ts' },
   shared: shareAll({
     singleton: true,
     strictVersion: true,
